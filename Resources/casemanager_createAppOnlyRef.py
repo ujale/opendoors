@@ -18,7 +18,11 @@ wait = WebDriverWait(driver, 15)
 opdLogo = driver.find_element(By.CSS_SELECTOR, "img[alt='Open Doors Community']")
 loginField = driver.find_element(By.CSS_SELECTOR, "div#sfdc_username_container  .input.inputBox")
 loginField.send_keys("udeme@opendoorsatl.org.qa.casemanager") 
+<<<<<<< HEAD
 passwordField = driver.find_element(By.CSS_SELECTOR, "")
+=======
+passwordField = driver.find_element(By.CSS_SELECTOR, "div#sfdc_password_container  .input.inputBox")
+>>>>>>> 9ccccfb92d7adb5e98aa41ed380eeb496177afdd
 passwordField.send_keys("13Gconnect,")
 loginBtn = driver.find_element(By.CSS_SELECTOR, ".loginButton.slds-button.slds-button--brand.uiButton.uiButton--none > .bBody.label").click()
 wait.until(ec.visibility_of_element_located((By.LINK_TEXT, "Home")))
