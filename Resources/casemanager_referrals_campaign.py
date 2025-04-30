@@ -20,9 +20,9 @@ opdLogo = driver.find_element(By.CSS_SELECTOR, "img[alt='Open Doors Community']"
 loginField = driver.find_element(By.CSS_SELECTOR, "div#sfdc_username_container  .input.inputBox")
 loginField.send_keys("udeme@opendoorsatl.org.qa.casemanager") 
 passwordField = driver.find_element(By.CSS_SELECTOR, "div#sfdc_password_container  .input.inputBox")
-passwordField.send_keys("12Gconnect,")
+passwordField.send_keys("13Gconnect,")
 loginBtn = driver.find_element(By.CSS_SELECTOR, ".loginButton.slds-button.slds-button--brand.uiButton.uiButton--none > .bBody.label").click()
-refAndCampaign = wait.until(ec.visibility_of_element_located((By.LINK_TEXT, "Referrals & Campaigns")))
+refAndCampaign = wait.until(ec.visibility_of_element_located((By.XPATH, "//a[@id='1' and @role='menuitem' and contains(@href, '/s/case/Case/') and text()='Referrals & Campaigns']")))
 refAndCampaign.click()
 pageTitle = wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[3]/div[@role='main']/div/div[2]/div/div[@class='ui-widget']/div//lst-breadcrumbs//h1[@class='slds-var-p-right_x-small']")))
 print("Page's title is :", pageTitle.text)
@@ -49,8 +49,7 @@ assert dropdownOption6.text == "Referrals - Unassigned"
 searchField = wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[3]/div[@role='main']//div[@class='ui-widget']/div//force-list-view-manager-search-bar//lightning-input[@class='slds-form-element']/lightning-primitive-input-simple//div[@class='slds-form-element__control slds-grow slds-input-has-icon slds-input-has-icon_left-right']/input[@name='Case-search-input']")))
 
 # View a referral
-wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "a[title='00011748']")))
-wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, 'a[href="/s/case/500Ea00000TXp9VIAT/bob-blob"]')))
+wait.until(ec.visibility_of_element_located((By.XPATH, "//a[@title='00011777' and @data-recordid='500Ea00000W7PNXIA3' and contains(@href, '/s/case/500Ea00000W7PNXIA3')]")))
 element = wait.until(ec.presence_of_element_located((By.CSS_SELECTOR, "a[target='_blank']")))
 driver.get("https://community-qa.opendoorsatl.org/s/case/500Ea00000TXp9VIAT/bob-blob")
 pageTitle = wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[3]/div[@role='main']/div/div[2]/div/div[@class='ui-widget']//records-lwc-highlights-panel/records-lwc-record-layout/forcegenerated-highlightspanel_case___0126a000000ykgcqak___compact___view___recordlayout2[@class='forcegenerated-record-layout2']/records-highlights2//slot[@name='entityLabel']/records-entity-label[.='Referral']")))

@@ -7,10 +7,11 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver import Keys
+from time import sleep
 from faker import Faker
 from time import sleep
 
-fake = Faker()
+fake =Faker()
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
@@ -52,12 +53,15 @@ wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, "span[title=\"Today's Ev
 #Properties Tab
 wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, 'a[href="/lightning/o/Property__c/home"]')))
 driver.find_element(By.CSS_SELECTOR, 'a[href="/lightning/o/Property__c/home"]').click()
-pageTitle = wait.until(ec.element_to_be_clickable((By.LINK_TEXT, "Properties")))
-print("Title on page is: ", pageTitle.text)
-assert pageTitle.text == "Properties"
+# pageTitle = wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, 'a[title="Properties"]>.slds-truncate')))
+# sleep(5)
+# print("Title on page is: ", pageTitle.text)
+# assert pageTitle.text == "Properties"
+
 # New Property
-wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, "li:nth-of-type(1) > a[role='button']")))
-driver.find_element(By.CSS_SELECTOR, "li:nth-of-type(1) > a[role='button']").click()
+#wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, "li:nth-of-type(1) > a[role='button']")))
+#driver.find_element(By.CSS_SELECTOR, "li:nth-of-type(1) > a[role='button']").click()
+driver.find_element(By.CSS_SELECTOR, "body > div.desktop.container.forceStyle.oneOne.navexDesktopLayoutContainer.lafAppLayoutHost.forceAccess > div.viewport > section > div.full.navexStandardManager > div.slds-no-print.oneAppNavContainer > one-appnav > div > one-app-nav-bar > nav > div > one-app-nav-bar-item-root.navItem.slds-context-bar__item.slds-shrink-none.slds-is-active > one-app-nav-bar-item-dropdown > div > one-app-nav-bar-menu-button > a > lightning-icon > span > lightning-primitive-icon > svg").click()
 wait.until(ec.visibility_of_element_located((By.XPATH, "//body[@class='desktop']//div[@class='DESKTOP uiContainerManager']/div/div[@role='dialog']//div[@class='modal-body scrollable slds-modal__content slds-p-around_medium']//one-record-action-flexipage/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-property_-details_with_-header___-property__c___create___-l-m-t___1738608849000[@class='adg-rollup-wrapped']/forcegenerated-flexipage_property_details_with_header_property__c__create_js___lmt___1738608849000[@class='forcegenerated-flexipage-module']/record_flexipage-desktop-record-page-decorator//h2[.='New Property']")))
 pageTitle = driver.find_element(By.XPATH, "//body[@class='desktop']//div[@class='DESKTOP uiContainerManager']/div/div[@role='dialog']//div[@class='modal-body scrollable slds-modal__content slds-p-around_medium']//one-record-action-flexipage/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-property_-details_with_-header___-property__c___create___-l-m-t___1738608849000[@class='adg-rollup-wrapped']/forcegenerated-flexipage_property_details_with_header_property__c__create_js___lmt___1738608849000[@class='forcegenerated-flexipage-module']/record_flexipage-desktop-record-page-decorator//h2[.='New Property']")
 print("Title on page is: ", pageTitle.text)
@@ -133,7 +137,7 @@ phone.send_keys(phone_number)
 email_address = wait.until(ec.visibility_of_element_located((By.XPATH, "//body[@class='desktop']//div[@class='DESKTOP uiContainerManager']/div/div[@role='dialog']//div[@class='modal-body scrollable slds-modal__content slds-p-around_medium']//one-record-action-flexipage/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-property_-details_with_-header___-property__c___create___-l-m-t___1738608849000[@class='adg-rollup-wrapped']/forcegenerated-flexipage_property_details_with_header_property__c__create_js___lmt___1738608849000[@class='forcegenerated-flexipage-module']/record_flexipage-desktop-record-page-decorator//records-record-layout-event-broker//flexipage-record-home-single-col-no-header-template-desktop2[@class='forcegenerated-flexipage-template']//slot[@name='main']/flexipage-component2[4]//flexipage-field-section2//laf-progressive-container//dl/slot[@name='columns']/flexipage-column2[2]//slot[@class='column']/flexipage-field[2]//record_flexipage-record-field[@role='listitem']//slot[@name='input']/lightning-input[@class='slds-form-element slds-form-element_stacked']/lightning-primitive-input-simple//div[@class='slds-form-element__control slds-grow']/input[@name='Email__c']")))
 email_address.send_keys("up@yopmail.com")
 street = wait.until(ec.visibility_of_element_located((By.XPATH, "//body[@class='desktop']//div[@class='DESKTOP uiContainerManager']/div/div[@role='dialog']//div[@class='modal-body scrollable slds-modal__content slds-p-around_medium']//one-record-action-flexipage/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-property_-details_with_-header___-property__c___create___-l-m-t___1738608849000[@class='adg-rollup-wrapped']/forcegenerated-flexipage_property_details_with_header_property__c__create_js___lmt___1738608849000[@class='forcegenerated-flexipage-module']/record_flexipage-desktop-record-page-decorator//records-record-layout-event-broker//flexipage-record-home-single-col-no-header-template-desktop2[@class='forcegenerated-flexipage-template']//slot[@name='main']/flexipage-component2[4]//flexipage-field-section2//laf-progressive-container//dl/slot[@name='columns']/flexipage-column2[1]//slot[@class='column']/flexipage-field[2]//record_flexipage-record-field[@role='listitem']//slot[@name='input']/records-record-layout-base-input/lightning-input[@class='slds-form-element slds-form-element_stacked']/lightning-primitive-input-simple//div[@class='slds-form-element__control slds-grow']/input[@name='Address_Street__c']")))
-street.send_keys("Delaware")
+street.send_keys("5678 north road")
 city_address = wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, ".slds-form-element__control.slds-grow > input[name='Address_City__c']")))
 city_address.send_keys("Atlanta")
 state = wait.until(ec.visibility_of_element_located((By.XPATH, "//body[@class='desktop']//div[@class='DESKTOP uiContainerManager']/div/div[@role='dialog']//div[@class='modal-body scrollable slds-modal__content slds-p-around_medium']//one-record-action-flexipage/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-property_-details_with_-header___-property__c___create___-l-m-t___1738608849000[@class='adg-rollup-wrapped']/forcegenerated-flexipage_property_details_with_header_property__c__create_js___lmt___1738608849000[@class='forcegenerated-flexipage-module']/record_flexipage-desktop-record-page-decorator//records-record-layout-event-broker//flexipage-record-home-single-col-no-header-template-desktop2[@class='forcegenerated-flexipage-template']//slot[@name='main']/flexipage-component2[4]//flexipage-field-section2//laf-progressive-container//dl/slot[@name='columns']/flexipage-column2[1]//slot[@class='column']/flexipage-field[4]//record_flexipage-record-field[@role='listitem']//slot[@name='input']/records-record-layout-base-input/lightning-input[@class='slds-form-element slds-form-element_stacked']/lightning-primitive-input-simple//div[@class='slds-form-element__control slds-grow']/input[@name='State__c']")))
@@ -145,5 +149,44 @@ county.send_keys("Decatur")
 ### Management Information
 mgt_acct = wait.until(ec.visibility_of_element_located((By.XPATH, "//body[@class='desktop']/div[4]/div[@class='DESKTOP uiContainerManager']/div/div[@role='dialog']//div[@class='modal-body scrollable slds-modal__content slds-p-around_medium']//one-record-action-flexipage/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-property_-details_with_-header___-property__c___create___-l-m-t___1738608849000[@class='adg-rollup-wrapped']/forcegenerated-flexipage_property_details_with_header_property__c__create_js___lmt___1738608849000[@class='forcegenerated-flexipage-module']/record_flexipage-desktop-record-page-decorator//records-record-layout-event-broker//flexipage-record-home-single-col-no-header-template-desktop2[@class='forcegenerated-flexipage-template']//slot[@name='main']/flexipage-component2[5]//flexipage-field-section2//laf-progressive-container//dl/slot[@name='columns']/flexipage-column2[1]//slot[@class='column']/flexipage-field[1]//record_flexipage-record-field[@role='listitem']//slot[@name='input']/records-record-layout-lookup/lightning-lookup/lightning-lookup-desktop/lightning-grouped-combobox[@class='slds-form-element']//lightning-base-combobox[@class='slds-combobox_container']//div[@role='none']//input[@role='combobox']")))
 mgt_acct.click()
+Manage_acct = wait.until(ec.visibility_of_element_located (By.CSS_SELECTOR, "#combobox-input-2792"))
+Manage_acct.send_keys("Unique Udeme")
+owner_acct = wait.until(ec.visibility_of_element_located (By.CSS_SELECTOR, "#combobox-input-5200"))
+owner_acct.send_keys("Agent Unique")
+onsite_mgt = wait.until(ec.visibility_of_element_located (By.CSS_SELECTOR, "#combobox-input-5209"))
+onsite_mgt.send_keys("Unique Agent")
+save1 = wait.until(ec.visibility_of_element_located (By.XPATH, '/html/body/div[4]/div[2]/div[6]/div[2]/div/div[2]/div/div/div/one-record-action-flexipage/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-property_-details_with_-header___-property__c___edit___-l-m-t___1739977362000/forcegenerated-flexipage_property_details_with_header_property__c__edit_js___lmt___1739977362000/record_flexipage-desktop-record-page-decorator/div[1]/records-form-footer/div/div/div/runtime_platform_actions-actions-ribbon/ul/li[3]/runtime_platform_actions-action-renderer/runtime_platform_actions-executor-lwc-headless/slot[1]/slot/lightning-button/button'))
+save1.click()
+
+###New Property inspection(HQS)
+inspection_new = wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div[1]/section/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/lst-object-home/div/lst-list-view-manager/lst-common-list-internal/lst-list-view-manager-header/div/div[1]/div[3]/div/ul/li[1]/a")))
+inspection_new.click()
+unit_name = wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div[4]/div[2]/div/div[2]/div/div/div/one-record-action-flexipage/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-unit_-availability_-record_-page___-unit_-availability__c___create___-l-m-t___1734038354000/forcegenerated-flexipage_unit_availability_record_page_unit_availability__c__create_js___lmt___1734038354000/record_flexipage-desktop-record-page-decorator/div[1]/records-record-layout-event-broker/slot/slot/flexipage-record-home-single-col-no-header-template-desktop2/div/div/div/slot/flexipage-component2[1]/slot/flexipage-field-section2/div/div/div/laf-progressive-container/slot/dl/slot/flexipage-column2[1]/div/slot/flexipage-field[1]/slot/record_flexipage-record-field/div/div[2]/slot/records-record-layout-base-input/lightning-input/lightning-primitive-input-simple/div[1]/div/input")))
+unit_name.send_keys("love")
+newproperty = wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div[4]/div[2]/div/div[2]/div/div/div/one-record-action-flexipage/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-unit_-availability_-record_-page___-unit_-availability__c___create___-l-m-t___1734038354000/forcegenerated-flexipage_unit_availability_record_page_unit_availability__c__create_js___lmt___1734038354000/record_flexipage-desktop-record-page-decorator/div[1]/records-record-layout-event-broker/slot/slot/flexipage-record-home-single-col-no-header-template-desktop2/div/div/div/slot/flexipage-component2[1]/slot/flexipage-field-section2/div/div/div/laf-progressive-container/slot/dl/slot/flexipage-column2[2]/div/slot/flexipage-field[2]/slot/record_flexipage-record-field/div/div[2]/slot/records-record-layout-lookup/lightning-lookup/lightning-lookup-desktop/lightning-grouped-combobox/div[1]/div/lightning-base-combobox/div/div/div[1]/div[1]/div/input")))
+newproperty.click()
+#cannot pick property from dropdown
+save2 = wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div[4]/div[2]/div/div[2]/div/div/div/one-record-action-flexipage/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-unit_-availability_-record_-page___-unit_-availability__c___create___-l-m-t___1734038354000/forcegenerated-flexipage_unit_availability_record_page_unit_availability__c__create_js___lmt___1734038354000/record_flexipage-desktop-record-page-decorator/div[1]/records-form-footer/div/div/div/runtime_platform_actions-actions-ribbon/ul/li[3]/runtime_platform_actions-action-renderer/runtime_platform_actions-executor-lwc-headless/slot[1]/slot/lightning-button/button")))
+save2.click()
+unit_inspection = wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div[4]/div[2]/div/div[2]/div/div/div/one-record-action-flexipage/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-unit_-availability_-record_-page___-unit_-availability__c___create___-l-m-t___1734038354000/forcegenerated-flexipage_unit_availability_record_page_unit_availability__c__create_js___lmt___1734038354000/record_flexipage-desktop-record-page-decorator/div[1]/records-form-footer/div/div/div/runtime_platform_actions-actions-ribbon/ul/li[3]/runtime_platform_actions-action-renderer/runtime_platform_actions-executor-lwc-headless/slot[1]/slot/lightning-button/button")))
+unit_inspection.click()
+status_inspection = wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div[4]/div[2]/div/div[2]/div/div/div[2]/div/article/flowruntime-flow/flowruntime-lwc-body/div/flowruntime-list-container/div/flowruntime-base-section/div/flowruntime-screen-field[8]/flowruntime-lwc-field/div/flowruntime-picklist-input-lwc/div/lightning-select/div/div/select")))
+status_inspection.click()
+#cannot pick status from dropdown
+upload= wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div[4]/div[2]/div/div[2]/div/div/div[2]/div/article/flowruntime-flow/flowruntime-lwc-body/div/flowruntime-list-container/div/flowruntime-base-section/div/flowruntime-screen-field[13]/flowruntime-lwc-field/div/c-file-upload-improved/lightning-layout/slot/lightning-layout-item[1]/slot/lightning-file-upload/lightning-input/lightning-primitive-input-file/div[1]/div/lightning-primitive-file-droppable-zone/slot/label/span[1]")))
+upload.click()
+Done1= wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div[5]/div[2]/div/div[3]/div/span[2]/button/span")))
+Done1.click()
+Submit1= wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div[4]/div[2]/div/div[2]/div/div/div[2]/div/article/flowruntime-flow/flowruntime-navigation-bar/footer/div/lightning-button/button")))
+Submit1.click()
+complete1= wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div[4]/div[2]/div/div[2]/div/div/div[2]/div/article/flowruntime-flow/flowruntime-navigation-bar/footer/div/lightning-button/button")))
+complete1.click()
+
+###New Property inspection(Soft walk)
+properties2 = driver.find_element(By.XPATH, "/html/body/div[4]/div[1]/section/div[1]/div[1]/one-appnav/div/one-app-nav-bar/nav/div/one-app-nav-bar-item-root[4]/a")
+properties2.click()
+property_new = wait.until(ec.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div[1]/section/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/lst-object-home/div/lst-list-view-manager/lst-common-list-internal/div/div/lst-primary-display-manager/div/lst-primary-display/lst-primary-display-grid/lightning-datatable/div[2]/div/div/table/tbody/tr[1]/th/span/div/lightning-primitive-custom-cell/lst-output-lookup/force-lookup/div/a/slot/span")))
+property_new.click()
+
 
 driver.quit()

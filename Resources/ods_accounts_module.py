@@ -47,13 +47,13 @@ wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, "span[title=\"Today's Ev
 #Accounts Tab
 wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, 'a[title="Accounts"]')))
 driver.find_element(By.CSS_SELECTOR, 'a[title="Accounts"]').click()
-wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, 'a[title=\'New\']')))
-wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, 'div[title=\'Discover Companies\']')))
-driver.find_element(By.CSS_SELECTOR, 'div[title=\'Import\']')
-wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, 'div[title=\'Assign Label\']')))
+wait.until(ec.visibility_of_element_located((By.XPATH, "//a[@class='forceActionLink' and @title='New' and @role='button']")))
+wait.until(ec.visibility_of_element_located((By.XPATH, "//a[@class='forceActionLink' and @title='Discover Companies' and @role='button']")))
+wait.until(ec.visibility_of_element_located((By.XPATH, "//a[@class='forceActionLink' and @title='Import' and @role='button']")))
+wait.until(ec.visibility_of_element_located((By.XPATH, "//a[@class='forceActionLink' and @title='Assign Label' and @role='button']")))
 wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, '.search-button.slds-button.slds-button_neutral.slds-truncate')))
 driver.find_element(By.CSS_SELECTOR, 'button[aria-label="Search"]').send_keys("Unique Udeme")
-## View An Account
+##View An Account
 driver.find_element(By.CSS_SELECTOR, "a[title='Unique Udeme']").click()
 acctName = driver.find_element(By.PARTIAL_LINK_TEXT, "Unique Udeme")
 print("Account Owner Name:", acctName.text)
@@ -76,7 +76,7 @@ closeBtn.click()
 #Edit Button
 # wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "li[data-target-selection-name='sfdc:StandardButton.Account.Edit']")))
 # driver.find_element(By.CSS_SELECTOR, "li[data-target-selection-name='sfdc:StandardButton.Account.Edit']").click()
-# saveBtn = driver.find_element(By.CSS_SELECTOR, "button[name='SaveEdit']") 
+# saveBtn = driver.find_element(By.CSS_SELECTOR, "button[name='SaveEdit']")
 #saveBtn.click()
 
 #Account - Contacts submodule
