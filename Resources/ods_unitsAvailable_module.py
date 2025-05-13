@@ -28,13 +28,13 @@ driver.find_element(By.CSS_SELECTOR, "#Login").click()
 wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, "div[class='slds-global-header__item'] div[class='slds-global-header__logo']"))).click()
 
 #Clicking on Dashboard Module
-wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, 'a[href="/lightning/o/Unit_Availability__c/home"]'))).click()
+wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, 'a[href="/lightning/o/Unit_Availability__c/home'))).click()
 #Click on Dropdown
 wait.until(ec.element_to_be_clickable((By.XPATH, "//button[@title='Select a List View: Unit Availability']"))).click()
 #Pin all users
 wait.until(ec.element_to_be_clickable((By.XPATH, "//button[@title='This list is pinned.']"))).click()
 #Assert available Unit
-unit1 = wait.until(ec.visibility_of_element_located((By.XPATH, "//a[@title='love' and contains(@href, '/lightning/r/')]")))
+unit1 = wait.until(ec.visibility_of_element_located((By.XPATH, '//span[@title="Unit Name" and contains(@class, "slds-truncate")]')))
 assert unit1.text == "Unit Name"
 unit2 = wait.until(ec.visibility_of_element_located((By.XPATH, "//tr[@data-row-key-value='a2yEa0000012MOrIAM']//a[text()='news']")))
 assert unit2.text == "news"
