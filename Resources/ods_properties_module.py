@@ -53,11 +53,9 @@ wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, "span[title=\"Today's Ev
 #Properties Tab
 wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, 'a[href="/lightning/o/Property__c/home"]')))
 driver.find_element(By.CSS_SELECTOR, 'a[href="/lightning/o/Property__c/home"]').click()
-# pageTitle = wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, 'a[title="Properties"]>.slds-truncate')))
-# sleep(5)
+# pageTitle = wait.until(ec.element_to_be_clickable((By.LINK_TEXT, "Properties")))
 # print("Title on page is: ", pageTitle.text)
 # assert pageTitle.text == "Properties"
-
 # New Property
 #wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, "li:nth-of-type(1) > a[role='button']")))
 #driver.find_element(By.CSS_SELECTOR, "li:nth-of-type(1) > a[role='button']").click()
