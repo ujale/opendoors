@@ -1,0 +1,19 @@
+Test failed due to exception: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000104aa6668 cxxbridge1$str$ptr + 2723108
+1   chromedriver                        0x0000000104a9e8dc cxxbridge1$str$ptr + 2690968
+2   chromedriver                        0x00000001045f2714 cxxbridge1$string$len + 90428
+3   chromedriver                        0x00000001046397c0 cxxbridge1$string$len + 381416
+4   chromedriver                        0x000000010467ade8 cxxbridge1$string$len + 649232
+5   chromedriver                        0x000000010462d9c8 cxxbridge1$string$len + 332784
+6   chromedriver                        0x0000000104a6a28c cxxbridge1$str$ptr + 2476360
+7   chromedriver                        0x0000000104a6d520 cxxbridge1$str$ptr + 2489308
+8   chromedriver                        0x0000000104a4ba78 cxxbridge1$str$ptr + 2351412
+9   chromedriver                        0x0000000104a6dda8 cxxbridge1$str$ptr + 2491492
+10  chromedriver                        0x0000000104a3cd6c cxxbridge1$str$ptr + 2290728
+11  chromedriver                        0x0000000104a8dd74 cxxbridge1$str$ptr + 2622512
+12  chromedriver                        0x0000000104a8df00 cxxbridge1$str$ptr + 2622908
+13  chromedriver                        0x0000000104a9e528 cxxbridge1$str$ptr + 2690020
+14  libsystem_pthread.dylib             0x0000000183c4c2e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x0000000183c470fc thread_start + 8
+

@@ -1,0 +1,7 @@
+node_modules/
+data_elements/
+.pytest_cache/
+.idea/
+.vscode/
+__pycache__/*
+path/
