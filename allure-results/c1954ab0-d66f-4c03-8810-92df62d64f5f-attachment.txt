@@ -1,0 +1,4 @@
+CAOR Link Text: Create Applicant Only Referral
+Page Header is: Referrals
+Referral (Applicant Only)
+Searched Applicant is: 

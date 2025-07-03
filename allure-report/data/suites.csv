@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+    Automates the login and applicant-only referral creation process on the Open Doors QA site.
+    ","31501","test_create_applicant_only_referral","tests","Thu Jul 03 18:25:33 WAT 2025","passed","Thu Jul 03 18:26:04 WAT 2025","","test_applicant_referral","",""

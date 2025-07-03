@@ -28,7 +28,7 @@ def test_create_applicant_only_referral(driver):
         login_field.send_keys("udeme@opendoorsatl.org.qa.casemanager")
 
         password_field = driver.find_element(By.CSS_SELECTOR, "div#sfdc_password_container  .input.inputBox")
-        password_field.send_keys("13Gconnect,")
+        password_field.send_keys("13Gconnect#")
 
         login_btn = driver.find_element(By.CSS_SELECTOR, ".loginButton.slds-button.slds-button--brand.uiButton.uiButton--none > .bBody.label")
         login_btn.click()
