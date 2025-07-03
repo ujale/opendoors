@@ -1,0 +1,27 @@
+# macOS system files
+.DS_Store
+
+# IDE/editor config
+.vscode/
+.idea/
+
+# Node.js dependencies
+node_modules/
+
+# Test artifacts
+videos/
+screenshots/
+
+# Virtual environments
+venv/
+
+# Python cache & system files
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+*.pyd
+
+# Qodo specific file (assumed custom tool)
+.qodo
+__init__.py

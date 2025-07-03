@@ -13,7 +13,7 @@ def test_create_applicant_only_referral(driver):
     """
     Automates the login and applicant-only referral creation process on the Open Doors QA site.
     """
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    #driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     driver.maximize_window()
     wait = WebDriverWait(driver, 15)
     action = ActionChains(driver)
@@ -55,6 +55,3 @@ def test_create_applicant_only_referral(driver):
     except Exception as e:
         print("Test failed due to exception:", str(e))
         raise
-
-    finally:
-        driver.quit()
