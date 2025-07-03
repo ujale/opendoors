@@ -38,9 +38,9 @@ def test_create_applicant_only_referral(driver):
     login_btn.click()
 
     # Step 3: Wait for home and navigate to CAOR
-    wait.until(EC.visibility_of_element_located((By.LINK_TEXT, "Home")))
-    caor_link = driver.find_element(By.LINK_TEXT, "Create Applicant Only Referral")
-    print("CAOR Link Text:", caor_link.text)
+    wait.until(EC.presence_of_element_located((By.PARTIAL_LINK_TEXT, "Create Applicant")))
+    caor_link = driver.find_element(By.PARTIAL_LINK_TEXT, "Create Applicant")
+    print("CAOR Link Found:", caor_link.text)
     caor_link.click()
 
     # Step 4: Wait for page header
