@@ -12,6 +12,12 @@ rm -rf screenshots allure-results allure-report
 mkdir -p screenshots
 mkdir -p allure-results
 
+# Install node modules if package.json exists and node_modules is missing
+if [ -f package.json ] && [ ! -d node_modules ]; then
+  echo "📦 Installing node modules..."
+  npm install
+fi
+
 echo "🚀 Running web tests..."
 python3 -m pytest --alluredir=allure-results
 

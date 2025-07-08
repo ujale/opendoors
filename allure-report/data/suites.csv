@@ -1,4 +1,7 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
 "
+    Test the Property Manager homepage for correct topbar and dashboard elements.
+    ","32898","test_pm_homepage","tests","Tue Jul 08 16:57:43 WAT 2025","passed","Tue Jul 08 16:58:16 WAT 2025","","test_PM_Homepage","",""
+"
     Automates the login and applicant-only referral creation process on the Open Doors QA site.
-    ","42579","test_create_applicant_only_referral","tests","Thu Jul 03 20:51:31 WAT 2025","passed","Thu Jul 03 20:52:14 WAT 2025","","test_applicant_referral","",""
+    ","23342","test_create_applicant_only_referral","tests","Tue Jul 08 16:58:17 WAT 2025","passed","Tue Jul 08 16:58:40 WAT 2025","","test_applicant_referral","",""
