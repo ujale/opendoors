@@ -16,7 +16,6 @@ screenshots/
 venv/
 
 # Python cache & system files
-__pycache__/
 .pytest_cache/
 *.pyc
 *.pyo
@@ -24,4 +23,6 @@ __pycache__/
 
 # Qodo specific file (assumed custom tool)
 .qodo
-__init__.py
+
+# Ignore macOS system files
+.DS_Store
