@@ -1,4 +1,4 @@
-# QA Automation Project – Selenium + Pytest + AllureFramework
+# QA Automation Project – Selenium + Pytest + Allure Framework
 
 This project contains automated UI tests using **Selenium WebDriver**, **Pytest**, and **Allure Reports**.
 
@@ -6,10 +6,10 @@ This project contains automated UI tests using **Selenium WebDriver**, **Pytest*
 
 ## 🚀 Tech Stack
 
-- **[Selenium Webdriver]()** – for browser automation
-- **[Pytest]()** – test runner
-- **[Allure Reporter]()** – Test reporting
-- **[Webdriver Manager]()** – auto-manages ChromeDriver versions
+- **[Selenium Webdriver]** – for browser automation
+- **[Pytest ]** – Test runner
+- **[Allure Reporter]** – Test reporting
+- **[Webdriver Manager]** – auto-manages ChromeDriver versions
 
 ---
 

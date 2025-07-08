@@ -45,4 +45,3 @@ wait.until(ec.visibility_of_element_located((By.XPATH, "//button[@title='Refresh
 wait.until(ec.visibility_of_element_located((By.XPATH, "//button[@title='Edit List' and @name='inlineEditButton']")))
 sleep(10)
 
-
