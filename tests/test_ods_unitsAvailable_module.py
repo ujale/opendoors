@@ -16,7 +16,7 @@ def test_units_available_module(driver):
     # Step 1: Login
     wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, "#logo")))
     driver.find_element(By.CSS_SELECTOR, "#username").send_keys("udeme@opendoorsatl.org.qa")
-    driver.find_element(By.CSS_SELECTOR, "#password").send_keys("1Gconnect.")
+    driver.find_element(By.CSS_SELECTOR, "#password").send_keys("1Gconnect!")
     driver.find_element(By.CSS_SELECTOR, "#Login").click()
 
     # Step 2: Home Page
