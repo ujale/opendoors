@@ -3,9 +3,9 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.wait import WebDriverWait
 from time import sleep
 
-def test_ods_people_module(driver):
+def test_ods_prop_inspection_module(driver):
     """
-    Test the All Users list view: login, navigation, dropdown selection, pinning, and basic UI assertions.
+    Test the Property Inspection module for correct login, navigation, and button/icon assertions.
     """
 
     driver.get("https://opendoors--qa.sandbox.my.salesforce.com")
@@ -21,24 +21,21 @@ def test_ods_people_module(driver):
     # Step 2: Home Page
     wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, "div[class='slds-global-header__item'] div[class='slds-global-header__logo']"))).click()
 
-    # Step 3: Navigate to Users Module
-    wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, 'a[href="/lightning/o/User/home"]'))).click()
+    # Step 3: Property Inspection Module
+    wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, 'a[href="/lightning/o/Property_Inspection__c/home"]'))).click()
+    wait.until(ec.element_to_be_clickable((By.XPATH, "//button[@title='Select a List View: Property Inspection']"))).click()
+    wait.until(ec.element_to_be_clickable((By.XPATH, "//button[@title='This list is pinned.']"))).click()
 
-    # Step 4: Open List View dropdown and select 'All Users'
-    wait.until(ec.element_to_be_clickable((By.XPATH, "//button[@role='button' and @title='Select a List View: People']"))).click()
-    wait.until(ec.element_to_be_clickable((By.XPATH, "//a[@role='option']//span[text()='All Users']"))).click()
-
-    # Step 5: Pin the List View
-    wait.until(ec.element_to_be_clickable((By.XPATH, "//button[@title='Pin this list view.']"))).click()
-
-    # Step 6: Assert action buttons are visible
+    # Step 4: Assert all other buttons
     assert wait.until(ec.visibility_of_element_located((By.XPATH, "//a[@title='New' and contains(@class, 'forceActionLink')]"))).text == "New"
     assert wait.until(ec.visibility_of_element_located((By.XPATH, "//a[@title='Import' and contains(@class, 'forceActionLink')]"))).text == "Import"
+    assert wait.until(ec.visibility_of_element_located((By.XPATH, "//a[@title='Assign Label' and contains(@class, 'forceActionLink')]"))).text == "Assign Label"
 
-    # Step 7: Assert list view control icons are present
+    # Step 5: Assert available Icons
     wait.until(ec.visibility_of_element_located((By.XPATH, "//button[@title='List View Controls' and contains(@class, 'slds-button_icon-more')]"))).click()
     wait.until(ec.visibility_of_element_located((By.XPATH, "//button[@title='Select list display' and contains(@class, 'slds-button_icon-more')]"))).click()
     wait.until(ec.visibility_of_element_located((By.XPATH, "//button[@title='Refresh' and @name='refreshButton' and contains(@class, 'slds-button_icon-border-filled')]"))).click()
     wait.until(ec.visibility_of_element_located((By.XPATH, "//button[@title='Edit List' and @name='inlineEditButton' and contains(@class, 'slds-button_icon-border-filled')]"))).click()
-
     sleep(2)
+
+
