@@ -1,0 +1,52 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+    Test the Property Inspection module for correct login, navigation, and button/icon assertions.
+    ","36894","test_ods_prop_inspection_module","tests","Mon Jul 14 15:25:37 WAT 2025","passed","Mon Jul 14 15:26:14 WAT 2025","","test_ods_propInspection_module","",""
+"
+    Test the Rental Concession module for correct login, navigation, and button/icon assertions.
+    ","42808","test_ods_rentalconcession_module","tests","Mon Jul 14 15:28:20 WAT 2025","passed","Mon Jul 14 15:29:03 WAT 2025","","test_ods_rentalconcession_module 2","",""
+"
+    Test the Rental Concession module for correct login, navigation, and button/icon assertions.
+    ","25756","test_ods_rentalconcession_module","tests","Mon Jul 14 15:29:03 WAT 2025","passed","Mon Jul 14 15:29:29 WAT 2025","","test_ods_rentalconcession_module","",""
+"
+    Test the Property Inspection module for correct login, navigation, and button/icon assertions.
+    ","36534","test_ods_prop_inspection_module","tests","Mon Jul 14 15:25:00 WAT 2025","passed","Mon Jul 14 15:25:37 WAT 2025","","test_ods_propInspection_module 2","",""
+"
+    Test login and logout functionality for the Property Manager user.
+    ","16166","test_pm_login_logout","tests","Mon Jul 14 15:23:10 WAT 2025","broken","Mon Jul 14 15:23:26 WAT 2025","","test_PM_Login_logout","",""
+"
+    Automates the login and applicant-only referral creation process on the Open Doors QA site.
+    ","29083","test_create_applicant_only_referral","tests","Mon Jul 14 15:24:30 WAT 2025","passed","Mon Jul 14 15:24:59 WAT 2025","","test_applicant_referral","",""
+"
+    Test the Support Request module for correct login, navigation, and button/icon assertions.
+    ","32435","test_ods_support_module","tests","Mon Jul 14 15:33:12 WAT 2025","passed","Mon Jul 14 15:33:44 WAT 2025","","test_ods_support_module","",""
+"
+    Test the Property page for correct navigation and icon presence.
+    ","33362","test_pm_property","tests","Mon Jul 14 15:23:27 WAT 2025","broken","Mon Jul 14 15:24:00 WAT 2025","","test_PM_Property 2","",""
+"
+    Test the Referrals module for correct login, navigation, and referral editing.
+    ","49599","test_ods_referrals_module","tests","Mon Jul 14 15:27:30 WAT 2025","broken","Mon Jul 14 15:28:19 WAT 2025","","test_ods_referrals_module","",""
+"
+    Test the Reports module for correct login, navigation, sidebar, and report creation.
+    ","72516","test_ods_reports_module","tests","Mon Jul 14 15:30:24 WAT 2025","broken","Mon Jul 14 15:31:37 WAT 2025","","test_ods_reports_module","",""
+"
+    Test the Unit Availability module for correct login, navigation, and unit assertions.
+    ","57379","test_units_available_module","tests","Mon Jul 14 15:34:24 WAT 2025","broken","Mon Jul 14 15:35:21 WAT 2025","","test_ods_unitsAvailable_module","",""
+"
+    Test the Property Manager homepage for correct topbar and dashboard elements.
+    ","40503","test_pm_homepage","tests","Mon Jul 14 15:22:29 WAT 2025","passed","Mon Jul 14 15:23:09 WAT 2025","","test_PM_Homepage","",""
+"
+    Test the Unit Availability module for correct login, navigation, and unit assertions.
+    ","37939","test_units_available_module","tests","Mon Jul 14 15:33:45 WAT 2025","broken","Mon Jul 14 15:34:23 WAT 2025","","test_ods_unitsAvailable_module 2","",""
+"
+    Test the Support Request module for correct login, navigation, and button/icon assertions.
+    ","93718","test_ods_support_module","tests","Mon Jul 14 15:31:38 WAT 2025","passed","Mon Jul 14 15:33:11 WAT 2025","","test_ods_support_module 2","",""
+"
+    Test the Reports module for correct login, navigation, sidebar, and report creation.
+    ","53452","test_ods_reports_module","tests","Mon Jul 14 15:29:30 WAT 2025","broken","Mon Jul 14 15:30:23 WAT 2025","","test_ods_reports_module 2","",""
+"
+    Test the Referrals module for correct login, navigation, and referral editing.
+    ","74161","test_ods_referrals_module","tests","Mon Jul 14 15:26:15 WAT 2025","broken","Mon Jul 14 15:27:29 WAT 2025","","test_ods_referrals_module 2","",""
+"
+    Test the Property page for correct navigation and icon presence.
+    ","28550","test_pm_property","tests","Mon Jul 14 15:24:01 WAT 2025","broken","Mon Jul 14 15:24:30 WAT 2025","","test_PM_Property","",""

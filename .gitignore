@@ -11,8 +11,7 @@ node_modules/
 # Test artifacts
 videos/
 screenshots/
-allure-results
-allure-report
+
 
 # Virtual environments
 venv/
