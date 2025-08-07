@@ -1,52 +1,76 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
 "
-    Test the Property Inspection module for correct login, navigation, and button/icon assertions.
-    ","36894","test_ods_prop_inspection_module","tests","Mon Jul 14 15:25:37 WAT 2025","passed","Mon Jul 14 15:26:14 WAT 2025","","test_ods_propInspection_module","",""
+    Test the Contacts module in the ODS Salesforce app.
+    ","22162","test_ods_contacts_module","tests","Thu Aug 07 01:29:39 WAT 2025","broken","Thu Aug 07 01:30:01 WAT 2025","","test_ods_contacts_module","",""
 "
     Test the Rental Concession module for correct login, navigation, and button/icon assertions.
-    ","42808","test_ods_rentalconcession_module","tests","Mon Jul 14 15:28:20 WAT 2025","passed","Mon Jul 14 15:29:03 WAT 2025","","test_ods_rentalconcession_module 2","",""
+    ","17800","test_ods_rentalconcession_module","tests","Thu Aug 07 01:32:39 WAT 2025","passed","Thu Aug 07 01:32:57 WAT 2025","","test_ods_rentalconcession_module","",""
 "
-    Test the Rental Concession module for correct login, navigation, and button/icon assertions.
-    ","25756","test_ods_rentalconcession_module","tests","Mon Jul 14 15:29:03 WAT 2025","passed","Mon Jul 14 15:29:29 WAT 2025","","test_ods_rentalconcession_module","",""
+    Test the 'Create Applicant Only Referral' flow for a Case Manager user.
+    ","4722","test_create_applicant_only_referral","tests","Thu Aug 07 01:27:04 WAT 2025","broken","Thu Aug 07 01:27:09 WAT 2025","","test_casemanager_createAppOnlyRef","",""
 "
-    Test the Property Inspection module for correct login, navigation, and button/icon assertions.
-    ","36534","test_ods_prop_inspection_module","tests","Mon Jul 14 15:25:00 WAT 2025","passed","Mon Jul 14 15:25:37 WAT 2025","","test_ods_propInspection_module 2","",""
+    Test the Dashboard module in the ODS Salesforce app.
+    ","62812","test_ods_dashboard_module","tests","Thu Aug 07 01:24:15 WAT 2025","passed","Thu Aug 07 01:25:18 WAT 2025","","test_Ods_dashboard_module","",""
+"
+    Test login and logout functionality for the Open Doors QA site.
+    ","14297","test_login_logout","tests","Thu Aug 07 01:27:30 WAT 2025","passed","Thu Aug 07 01:27:44 WAT 2025","","test_index","",""
+"
+    Test login and logout functionality for the ODS Salesforce portal, including navigation and tab visibility.
+    ","24057","test_ods_login_logout","tests","Thu Aug 07 01:30:41 WAT 2025","broken","Thu Aug 07 01:31:05 WAT 2025","","test_ods_login_logout","",""
+"
+    Test the Case Manager properties page and its key widgets.
+    ","4212","test_casemanager_properties","tests","Thu Aug 07 01:27:19 WAT 2025","broken","Thu Aug 07 01:27:23 WAT 2025","","test_casemanager_properties","",""
+"
+    Test the Applicant module in the ODS Salesforce app.
+    ","66012","test_ods_applicant_module","tests","Thu Aug 07 01:28:32 WAT 2025","passed","Thu Aug 07 01:29:38 WAT 2025","","test_ods_applicant_module","",""
 "
     Test login and logout functionality for the Property Manager user.
-    ","16166","test_pm_login_logout","tests","Mon Jul 14 15:23:10 WAT 2025","broken","Mon Jul 14 15:23:26 WAT 2025","","test_PM_Login_logout","",""
+    ","14415","test_pm_login_logout","tests","Thu Aug 07 01:25:59 WAT 2025","passed","Thu Aug 07 01:26:13 WAT 2025","","test_PM_Login_logout","",""
+"
+    Test the Referrals & Campaigns module in the Case Manager Community app.
+    ","4912","test_casemanager_referrals_campaign","tests","Thu Aug 07 01:27:24 WAT 2025","broken","Thu Aug 07 01:27:29 WAT 2025","","test_casemanager_referrals_campaign","",""
+"
+    Test the All Users list view: login, navigation, dropdown selection, pinning, and basic UI assertions.
+    ","27542","test_ods_people_module","tests","Thu Aug 07 01:31:06 WAT 2025","broken","Thu Aug 07 01:31:34 WAT 2025","","test_ods_people_module","",""
+"
+    Test the Property Inspection module for correct login, navigation, and button/icon assertions.
+    ","16286","test_ods_prop_inspection_module","tests","Thu Aug 07 01:31:35 WAT 2025","passed","Thu Aug 07 01:31:51 WAT 2025","","test_ods_propInspection_module","",""
+"
+    Test the Case Manager homepage dashboard and its key widgets.
+    ","4307","test_casemanager_homepage_dashboard","tests","Thu Aug 07 01:27:09 WAT 2025","broken","Thu Aug 07 01:27:14 WAT 2025","","test_casemanager_homepage","",""
+"
+    Test the Referrals module for correct login, navigation, and referral editing.
+    ","28398","test_ods_referrals_module","tests","Thu Aug 07 01:31:52 WAT 2025","broken","Thu Aug 07 01:32:20 WAT 2025","","test_ods_referrals_module","",""
+"
+    Test the Rental Concession module for correct login, navigation, and button/icon assertions.
+    ","17750","test_ods_rentalconcession_module","tests","Thu Aug 07 01:32:21 WAT 2025","passed","Thu Aug 07 01:32:38 WAT 2025","","test_ods_rentalconcession_module 2","",""
+"
+    Test the DocuSign module in the ODS Salesforce app.
+    ","27894","test_ods_docusign_module","tests","Thu Aug 07 01:30:02 WAT 2025","broken","Thu Aug 07 01:30:30 WAT 2025","","test_ods_docusign_module","",""
+"
+    Test the ODS Salesforce homepage dashboard, navigation, and tab visibility.
+    ","10030","test_ods_homepage_dashboard","tests","Thu Aug 07 01:30:31 WAT 2025","broken","Thu Aug 07 01:30:41 WAT 2025","","test_ods_homepage_dashboard","",""
+"
+    Test the Accounts module in the ODS Salesforce app.
+    ","46941","test_ods_accounts_module","tests","Thu Aug 07 01:27:45 WAT 2025","broken","Thu Aug 07 01:28:31 WAT 2025","","test_ods_accounts_module","",""
+"
+    Test the Unit Availability module for correct login, navigation, and unit assertions.
+    ","28762","test_units_available_module","tests","Thu Aug 07 01:33:44 WAT 2025","broken","Thu Aug 07 01:34:12 WAT 2025","","test_ods_unitsAvailable_module","",""
+"
+    Test the Property page for correct navigation and icon presence.
+    ","26929","test_pm_property","tests","Thu Aug 07 01:26:14 WAT 2025","broken","Thu Aug 07 01:26:41 WAT 2025","","test_PM_Property","",""
 "
     Automates the login and applicant-only referral creation process on the Open Doors QA site.
-    ","29083","test_create_applicant_only_referral","tests","Mon Jul 14 15:24:30 WAT 2025","passed","Mon Jul 14 15:24:59 WAT 2025","","test_applicant_referral","",""
-"
-    Test the Support Request module for correct login, navigation, and button/icon assertions.
-    ","32435","test_ods_support_module","tests","Mon Jul 14 15:33:12 WAT 2025","passed","Mon Jul 14 15:33:44 WAT 2025","","test_ods_support_module","",""
-"
-    Test the Property page for correct navigation and icon presence.
-    ","33362","test_pm_property","tests","Mon Jul 14 15:23:27 WAT 2025","broken","Mon Jul 14 15:24:00 WAT 2025","","test_PM_Property 2","",""
-"
-    Test the Referrals module for correct login, navigation, and referral editing.
-    ","49599","test_ods_referrals_module","tests","Mon Jul 14 15:27:30 WAT 2025","broken","Mon Jul 14 15:28:19 WAT 2025","","test_ods_referrals_module","",""
-"
-    Test the Reports module for correct login, navigation, sidebar, and report creation.
-    ","72516","test_ods_reports_module","tests","Mon Jul 14 15:30:24 WAT 2025","broken","Mon Jul 14 15:31:37 WAT 2025","","test_ods_reports_module","",""
-"
-    Test the Unit Availability module for correct login, navigation, and unit assertions.
-    ","57379","test_units_available_module","tests","Mon Jul 14 15:34:24 WAT 2025","broken","Mon Jul 14 15:35:21 WAT 2025","","test_ods_unitsAvailable_module","",""
+    ","21829","test_create_applicant_only_referral","tests","Thu Aug 07 01:26:42 WAT 2025","passed","Thu Aug 07 01:27:03 WAT 2025","","test_applicant_referral","",""
 "
     Test the Property Manager homepage for correct topbar and dashboard elements.
-    ","40503","test_pm_homepage","tests","Mon Jul 14 15:22:29 WAT 2025","passed","Mon Jul 14 15:23:09 WAT 2025","","test_PM_Homepage","",""
-"
-    Test the Unit Availability module for correct login, navigation, and unit assertions.
-    ","37939","test_units_available_module","tests","Mon Jul 14 15:33:45 WAT 2025","broken","Mon Jul 14 15:34:23 WAT 2025","","test_ods_unitsAvailable_module 2","",""
-"
-    Test the Support Request module for correct login, navigation, and button/icon assertions.
-    ","93718","test_ods_support_module","tests","Mon Jul 14 15:31:38 WAT 2025","passed","Mon Jul 14 15:33:11 WAT 2025","","test_ods_support_module 2","",""
+    ","39331","test_pm_homepage","tests","Thu Aug 07 01:25:19 WAT 2025","passed","Thu Aug 07 01:25:58 WAT 2025","","test_PM_Homepage","",""
 "
     Test the Reports module for correct login, navigation, sidebar, and report creation.
-    ","53452","test_ods_reports_module","tests","Mon Jul 14 15:29:30 WAT 2025","broken","Mon Jul 14 15:30:23 WAT 2025","","test_ods_reports_module 2","",""
+    ","28434","test_ods_reports_module","tests","Thu Aug 07 01:32:57 WAT 2025","passed","Thu Aug 07 01:33:26 WAT 2025","","test_ods_reports_module","",""
 "
-    Test the Referrals module for correct login, navigation, and referral editing.
-    ","74161","test_ods_referrals_module","tests","Mon Jul 14 15:26:15 WAT 2025","broken","Mon Jul 14 15:27:29 WAT 2025","","test_ods_referrals_module 2","",""
+    Test login and logout functionality for the Case Manager portal.
+    ","4347","test_casemanager_login_logout","tests","Thu Aug 07 01:27:14 WAT 2025","broken","Thu Aug 07 01:27:19 WAT 2025","","test_casemanager_login_logout","",""
 "
-    Test the Property page for correct navigation and icon presence.
-    ","28550","test_pm_property","tests","Mon Jul 14 15:24:01 WAT 2025","broken","Mon Jul 14 15:24:30 WAT 2025","","test_PM_Property","",""
+    Test the Support Request module for correct login, navigation, and button/icon assertions.
+    ","16662","test_ods_support_module","tests","Thu Aug 07 01:33:26 WAT 2025","passed","Thu Aug 07 01:33:43 WAT 2025","","test_ods_support_module","",""
